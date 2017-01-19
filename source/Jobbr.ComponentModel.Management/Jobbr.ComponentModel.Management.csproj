@@ -41,8 +41,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IJobManagementService.cs" />
+    <Compile Include="IServerManagementService.cs" />
+    <Compile Include="Model\JobArtefact.cs" />
+    <Compile Include="Model\IJobTrigger.cs" />
+    <Compile Include="Model\InstantTrigger.cs" />
+    <Compile Include="Model\Job.cs" />
+    <Compile Include="Model\JobRun.cs" />
+    <Compile Include="Model\ScheduledTrigger.cs" />
+    <Compile Include="Model\RecurringTrigger.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
