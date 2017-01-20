@@ -7,16 +7,7 @@ namespace Jobbr.ComponentModel.Management
 {
     public interface IJobManagementService
     {
-        List<Job> GetAllJobs();
-
-        Job GetJobById(long id);
-
         Job AddJob(Job job);
-
-        Job GetJobByUniqueName(string uniqueName);
-
-
-        List<IJobTrigger> GetActiveTriggers();
 
         long AddTrigger(RecurringTrigger trigger);
 
@@ -27,21 +18,6 @@ namespace Jobbr.ComponentModel.Management
         bool DisableTrigger(long triggerId);
 
         bool EnableTrigger(long triggerId);
-
-        JobRun GetJobRunById(long id);
-
-
-        List<JobRun> GetJobRuns();
-
-        IJobTrigger GetTriggerById(long triggerId);
-
-        List<IJobTrigger> GetTriggersByJobId(long jobId);
-
-        List<JobRun> GetJobRunsByUserOrderByIdDesc(long userId);
-
-        List<JobRun> GetJobRunsByTriggerId(long triggerId);
-
-        List<JobRun> GetJobRunsByUserNameOrderOrderByIdDesc(string userName);
 
         List<JobArtefact> GetArtefactForJob(JobRun jobRun);
 

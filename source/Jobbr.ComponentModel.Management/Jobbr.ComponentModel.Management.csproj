@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C83448F5-759D-4322-ACFE-B447D1ABF9EC}</ProjectGuid>
+    <ProjectGuid>{44C1E5B0-5802-48FA-910E-17665587979D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Jobbr.ComponentModel.Management</RootNamespace>
@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IJobManagementService.cs" />
+    <Compile Include="IQueryService.cs" />
     <Compile Include="IServerManagementService.cs" />
     <Compile Include="Model\JobArtefact.cs" />
     <Compile Include="Model\IJobTrigger.cs" />
