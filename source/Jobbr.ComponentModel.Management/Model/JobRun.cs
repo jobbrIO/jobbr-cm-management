@@ -4,7 +4,8 @@ namespace Jobbr.ComponentModel.Management.Model
 {
     public enum JobRunStates
     {
-        
+        Deleted,
+        Scheduled
     }
 
     public class JobRun

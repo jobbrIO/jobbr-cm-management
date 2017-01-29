@@ -17,5 +17,6 @@ namespace Jobbr.ComponentModel.Management.Model
         public long? UserId { get; set; }
         public string UserName { get; set; }
         public long JobId { get; set; }
+        public bool NoParallelExecution { get; set; }
     }
 }
