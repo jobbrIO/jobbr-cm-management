@@ -19,9 +19,9 @@ namespace Jobbr.ComponentModel.Management
 
         bool EnableTrigger(long triggerId);
 
-        List<JobArtefact> GetArtefactForJob(JobRun jobRun);
+        List<JobArtefact> GetArtefactForJob(Guid jobRunUniqueId);
 
-        Stream GetArtefactAsStream(JobRun jobRun, string filename);
+        Stream GetArtefactAsStream(Guid jobRunUniqueId, string filename);
 
         void UpdateTriggerDefinition(long triggerId, string definition);
 
