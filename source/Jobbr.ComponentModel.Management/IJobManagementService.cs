@@ -25,6 +25,6 @@ namespace Jobbr.ComponentModel.Management
 
         void UpdateTriggerDefinition(long triggerId, string definition);
 
-        void UpdatetriggerStartTime(long triggerId, DateTime startDateTimeUtc);
+        void UpdateTriggerStartTime(long triggerId, DateTime startDateTimeUtc);
     }
 }
