@@ -6,6 +6,7 @@
     <authors>Jobbr</authors>
     <owners>Jobbr</owners>
     <projectUrl>http://github.com/jobbrIO/jobbr-cm-management</projectUrl>
+    <licenseUrl>https://raw.githubusercontent.com/jobbrIO/jobbr-cm-management/develop/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Jobbr is a .NET JobServer</description>
     <copyright>Copyright 2017</copyright>
