@@ -21,10 +21,10 @@ namespace Jobbr.ComponentModel.Management
 
         List<JobRun> GetJobRuns();
 
-        List<JobRun> GetJobRunsByUserOrderByIdDesc(long userId);
+        List<JobRun> GetJobRunsByUserIdOrderByIdDesc(long userId);
 
         List<JobRun> GetJobRunsByTriggerId(long triggerId);
 
-        List<JobRun> GetJobRunsByUserNameOrderOrderByIdDesc(string userName);
+        List<JobRun> GetJobRunsByUserNameOrderByIdDesc(string userName);
     }
 }
