@@ -13,13 +13,13 @@ namespace Jobbr.ComponentModel.Management
 
         List<IJobTrigger> GetActiveTriggers();
 
-        JobRun GetJobRunById(long id);
-
-        List<JobRun> GetJobRuns();
-
         IJobTrigger GetTriggerById(long triggerId);
 
         List<IJobTrigger> GetTriggersByJobId(long jobId);
+
+        JobRun GetJobRunById(long id);
+
+        List<JobRun> GetJobRuns();
 
         List<JobRun> GetJobRunsByUserOrderByIdDesc(long userId);
 
