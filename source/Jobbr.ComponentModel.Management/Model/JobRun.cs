@@ -84,9 +84,6 @@ namespace Jobbr.ComponentModel.Management.Model
         public JobRunStates State { get; set; }
         public double? Progress { get; set; }
 
-        public int UserId { get; set; }
-        public string UserName { get; set; }
-
         public DateTime PlannedStartDateTimeUtc { get; set; }
         public DateTime? ActualStartDateTimeUtc { get; set; }
         public DateTime? ActualEndDateTimeUtc { get; set; }
