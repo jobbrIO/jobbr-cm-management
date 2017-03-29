@@ -7,24 +7,24 @@ namespace Jobbr.ComponentModel.Management
 {
     public interface IJobManagementService
     {
-        Job AddJob(Job job);
+        void AddJob(Job job);
 
-        long AddTrigger(RecurringTrigger trigger);
+        void AddTrigger(RecurringTrigger trigger);
 
-        long AddTrigger(ScheduledTrigger trigger);
+        void AddTrigger(ScheduledTrigger trigger);
 
-        long AddTrigger(InstantTrigger trigger);
+        void AddTrigger(InstantTrigger trigger);
 
-        bool DisableTrigger(long triggerId);
+        void DisableTrigger(long jobId, long triggerId);
 
-        bool EnableTrigger(long triggerId);
+        void EnableTrigger(long jobId, long triggerId);
 
         List<JobArtefact> GetArtefactForJob(long jobRunId);
 
         Stream GetArtefactAsStream(long jobRunId, string filename);
 
-        void UpdateTriggerDefinition(long triggerId, string definition);
+        void UpdateTriggerDefinition(long jobId, long triggerId, string definition);
 
-        void UpdateTriggerStartTime(long triggerId, DateTime startDateTimeUtc);
+        void UpdateTriggerStartTime(long jobId, long triggerId, DateTime startDateTimeUtc);
     }
 }

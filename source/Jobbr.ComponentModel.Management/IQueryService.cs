@@ -5,7 +5,7 @@ namespace Jobbr.ComponentModel.Management
 {
     public interface IQueryService
     {
-        List<Job> GetAllJobs();
+        List<Job> GetJobs(int page = 0, int pageSize = 50);
 
         Job GetJobById(long id);
 
@@ -13,18 +13,18 @@ namespace Jobbr.ComponentModel.Management
 
         List<IJobTrigger> GetActiveTriggers();
 
-        IJobTrigger GetTriggerById(long triggerId);
+        IJobTrigger GetTriggerById(long jobId, long triggerId);
 
         List<IJobTrigger> GetTriggersByJobId(long jobId);
 
         JobRun GetJobRunById(long id);
 
-        List<JobRun> GetJobRuns();
+        List<JobRun> GetJobRuns(long page = 0, long pageSize = 50);
 
-        List<JobRun> GetJobRunsByUserIdOrderByIdDesc(long userId);
+        List<JobRun> GetJobRunsByUserIdOrderByIdDesc(string userId);
 
-        List<JobRun> GetJobRunsByTriggerId(long triggerId);
+        List<JobRun> GetJobRunsByTriggerId(long jobId, long triggerId);
 
-        List<JobRun> GetJobRunsByUserNameOrderByIdDesc(string userName);
+        List<JobRun> GetJobRunsByUserDisplayNameOrderByIdDesc(string userDisplayName);
     }
 }
