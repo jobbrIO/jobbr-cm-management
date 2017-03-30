@@ -12,9 +12,7 @@
 
         string UserDisplayName { get; set; }
 
-        long? UserId { get; set; }
-
-        string UserName { get; set; }
+        string UserId { get; set; }
 
         long JobId { get; set; }
     }
