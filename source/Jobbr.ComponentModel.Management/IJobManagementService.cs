@@ -9,11 +9,11 @@ namespace Jobbr.ComponentModel.Management
     {
         void AddJob(Job job);
 
-        void AddTrigger(RecurringTrigger trigger);
+        void AddTrigger(long jobId, RecurringTrigger trigger);
 
-        void AddTrigger(ScheduledTrigger trigger);
+        void AddTrigger(long jobId, ScheduledTrigger trigger);
 
-        void AddTrigger(InstantTrigger trigger);
+        void AddTrigger(long jobId, InstantTrigger trigger);
 
         void DisableTrigger(long jobId, long triggerId);
 
