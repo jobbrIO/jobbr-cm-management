@@ -1,5 +1,4 @@
 # jobbr-cm-management [![Build status](https://ci.appveyor.com/api/projects/status/akvsehv0wvwbo08a?svg=true)](https://ci.appveyor.com/project/Jobbr/jobbr-cm-management)
-Component Models to use the 
 
 This Repository contains specifications, aka. Component Models for gaining access to [Jobbr](https://www.jobbr.io) though the Server Management API as a plugin.
 
