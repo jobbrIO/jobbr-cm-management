@@ -8,7 +8,7 @@
     <projectUrl>http://github.com/jobbrIO/jobbr-cm-management</projectUrl>
     <licenseUrl>https://raw.githubusercontent.com/jobbrIO/jobbr-cm-management/develop/LICENSE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <description>Jobbr is a .NET JobServer</description>
+    <description>Component Models to use the Server Management API of Jobbr Server</description>
     <copyright>Copyright 2017</copyright>
     <iconUrl>https://raw.githubusercontent.com/jobbrIO/artwork/master/build/icons/icon_addon_256_dark.png</iconUrl>
   </metadata>
