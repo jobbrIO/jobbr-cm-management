@@ -9,6 +9,8 @@ namespace Jobbr.ComponentModel.Management
     {
         void AddJob(Job job);
 
+        void DeleteJob(long jobId);
+
         void AddTrigger(long jobId, RecurringTrigger trigger);
 
         void AddTrigger(long jobId, ScheduledTrigger trigger);
@@ -18,6 +20,8 @@ namespace Jobbr.ComponentModel.Management
         void DisableTrigger(long jobId, long triggerId);
 
         void EnableTrigger(long jobId, long triggerId);
+
+        void DeleteTrigger(long jobId, long triggerId);
 
         List<JobArtefact> GetArtefactForJob(long jobRunId);
 
