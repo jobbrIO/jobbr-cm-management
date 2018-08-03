@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using Jobbr.ComponentModel.Management.Model;
 
 namespace Jobbr.ComponentModel.Management
@@ -16,11 +15,13 @@ namespace Jobbr.ComponentModel.Management
 
         IJobTrigger GetTriggerById(long jobId, long triggerId);
 
-        List<IJobTrigger> GetTriggersByJobId(long jobId);
+        PagedResult<IJobTrigger> GetTriggersByJobId(long jobId, int page, int pageSize);
 
         JobRun GetJobRunById(long id);
 
         PagedResult<JobRun> GetJobRuns(int page = 1, int pageSize = 50, string jobTypeFilter = null, string jobUniqueNameFilter = null, string query = null, params string[] sort);
+
+        PagedResult<JobRun> GetJobRunsByJobId(int jobId, int page = 1, int pageSize = 50, string jobTypeFilter = null, string jobUniqueNameFilter = null, string query = null, params string[] sort);
 
         PagedResult<JobRun> GetJobRunsByUserId(string userId, int page = 1, int pageSize = 50, string jobTypeFilter = null, string jobUniqueNameFilter = null, params string[] sort);
 
