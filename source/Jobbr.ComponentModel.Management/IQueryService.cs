@@ -1,17 +1,18 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Jobbr.ComponentModel.Management.Model;
 
 namespace Jobbr.ComponentModel.Management
 {
     public interface IQueryService
     {
-        List<Job> GetJobs(int page = 0, int pageSize = 50);
-
         Job GetJobById(long id);
 
         Job GetJobByUniqueName(string uniqueName);
 
-        List<IJobTrigger> GetActiveTriggers();
+        PagedResult<Job> GetJobs(int page = 1, int pageSize = 50, string jobTypeFilter = null, string jobUniqueNameFilter = null, string query = null, params string[] sort);
+
+        PagedResult<IJobTrigger> GetActiveTriggers(int page = 1, int pageSize = 50, string jobTypeFilter = null, string jobUniqueNameFilter = null, string query = null, params string[] sort);
 
         IJobTrigger GetTriggerById(long jobId, long triggerId);
 
@@ -19,12 +20,18 @@ namespace Jobbr.ComponentModel.Management
 
         JobRun GetJobRunById(long id);
 
-        List<JobRun> GetJobRuns(long page = 0, long pageSize = 50);
+        List<JobRun> GetJobRuns(int page = 1, int pageSize = 50, string jobTypeFilter = null, string jobUniqueNameFilter = null, string query = null, params string[] sort);
 
-        List<JobRun> GetJobRunsByUserIdOrderByIdDesc(string userId);
+        PagedResult<JobRun> GetJobRunsByUserId(string userId, int page = 1, int pageSize = 50, string jobTypeFilter = null, string jobUniqueNameFilter = null, params string[] sort);
 
-        List<JobRun> GetJobRunsByTriggerId(long jobId, long triggerId);
+        PagedResult<JobRun> GetJobRunsByTriggerId(long jobId, long triggerId, int page = 1, int pageSize = 50, params string[] sort);
 
-        List<JobRun> GetJobRunsByUserDisplayNameOrderByIdDesc(string userDisplayName);
+        PagedResult<JobRun> GetJobRunsByUserDisplayName(string userDisplayName, int page = 1, int pageSize = 50, string jobTypeFilter = null, string jobUniqueNameFilter = null, params string[] sort);
+
+        PagedResult<JobRun> GetJobRunsByState(JobRunStates state, int page = 1, int pageSize = 50, string jobTypeFilter = null, string jobUniqueNameFilter = null, string query = null, params string[] sort);
+
+        JobRun GetLastJobRunByTriggerId(long jobId, long triggerId, DateTime utcNow);
+
+        JobRun GetNextJobRunByTriggerId(long jobId, long triggerId, DateTime utcNow);
     }
 }
