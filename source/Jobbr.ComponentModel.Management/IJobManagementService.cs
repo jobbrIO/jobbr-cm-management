@@ -9,6 +9,8 @@ namespace Jobbr.ComponentModel.Management
     {
         void AddJob(Job job);
 
+        void UpdateJob(Job job);
+
         void DeleteJob(long jobId);
 
         void AddTrigger(long jobId, RecurringTrigger trigger);
@@ -28,6 +30,10 @@ namespace Jobbr.ComponentModel.Management
         Stream GetArtefactAsStream(long jobRunId, string filename);
 
         void UpdateTriggerDefinition(long jobId, long triggerId, string definition);
+
+        void Update(RecurringTrigger trigger);
+
+        void Update(ScheduledTrigger trigger);
 
         void UpdateTriggerStartTime(long jobId, long triggerId, DateTime startDateTimeUtc);
     }
