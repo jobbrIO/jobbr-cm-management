@@ -36,5 +36,7 @@ namespace Jobbr.ComponentModel.Management
         void Update(ScheduledTrigger trigger);
 
         void UpdateTriggerStartTime(long jobId, long triggerId, DateTime startDateTimeUtc);
+
+        void DeleteJobRun(long jobRunId);
     }
 }
