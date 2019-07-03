@@ -12,5 +12,6 @@ namespace Jobbr.ComponentModel.Management.Model
         public DateTime? UpdatedDateTimeUtc { get; set; }
         public DateTime? CreatedDateTimeUtc { get; set; }
         public bool Deleted { get; set; }
+        public int MaxConcurrentJobRuns { get; set; }
     }
 }
