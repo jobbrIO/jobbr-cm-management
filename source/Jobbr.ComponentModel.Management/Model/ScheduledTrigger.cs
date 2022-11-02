@@ -12,5 +12,6 @@ namespace Jobbr.ComponentModel.Management.Model
         public string UserDisplayName { get; set; }
         public string UserId { get; set; }
         public long JobId { get; set; }
+        public bool Deleted { get; set; }
     }
 }

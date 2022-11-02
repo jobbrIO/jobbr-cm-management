@@ -15,5 +15,7 @@
         string UserId { get; set; }
 
         long JobId { get; set; }
+
+        bool Deleted { get; set; }
     }
 }

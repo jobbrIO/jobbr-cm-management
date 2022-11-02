@@ -24,5 +24,7 @@ namespace Jobbr.ComponentModel.Management.Model
 
         public string JobParameters { get; set; }
         public string InstanceParameters { get; set; }
+
+        public bool Deleted { get; set; }
     }
 }

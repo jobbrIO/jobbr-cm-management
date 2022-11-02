@@ -7,7 +7,9 @@ branches:
     - /feature/.*/
 
 install:
-  - choco install gitversion.portable -pre -y
+  - choco install gitversion.portable --version 4.0.0
+
+image: Visual Studio 2019
 
 assembly_info:
   patch: false
@@ -31,6 +33,6 @@ deploy:
 - provider: NuGet
   server: https://nuget.org
   api_key:
-    secure: +AgExDSzPqydFKSbpQBS0j3s8d3rwTli8aRmMbUZ3DVBL29Lj7MNPOxEDLJT7f07
+    secure: yiJlhXbv75zWvfaAnpz+6xiOMC7sq4ZAIqLS0l4dwj6Kxwrwr1yaBqQe/Hy1+shY
   on:
     appveyor_repo_tag: true
