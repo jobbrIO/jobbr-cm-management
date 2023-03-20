@@ -3,9 +3,4 @@
     <ProjectGuid>{44C1E5B0-5802-48FA-910E-17665587979D}</ProjectGuid>
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
-  <ItemGroup>
-    <PackageReference Include="NuGet.CommandLine" Version="5.9.1">
-      <PrivateAssets>all</PrivateAssets>
-    </PackageReference>
-  </ItemGroup>
 </Project>
