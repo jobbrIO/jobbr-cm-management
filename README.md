@@ -1,3 +1,7 @@
+> [!IMPORTANT]  
+> This repository is obsolete.  
+> Development of Jobbr has been moved to the [jobbr mono-repo](https://github.com/jobbrIO/jobbr).
+
 # Jobbr ComponentModel Management [![Build status](https://img.shields.io/appveyor/build/jobbr/jobbr-cm-management/develop.svg?label=develop)](https://ci.appveyor.com/project/Jobbr/jobbr-cm-management)
 
 This Repository contains specifications, aka. Component Models for gaining access to [Jobbr](https://www.jobbr.io) though the Server Management API as a plugin.
